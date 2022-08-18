@@ -12,30 +12,47 @@
       rel="stylesheet"
     />
     <!-- title -->
+    <link rel="stylesheet" href="./style.css">
     <title>Vite App</title>
   </head>
   <body>
     <header class="primary-header">
       <div class="container">
-      <a href="#"><img src="./img/images/logo.svg" alt="" /></a>
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-          <img class="icon-hamburger" src="img/images/icon-hamburger.svg" alt="" aria-hidden="true">
-          <img class="icon-close" src="img/images/icon-close.svg" alt="" aria-hidden="true">
-          <span class="sr-only">Menu</span>
-        </button>
-      <nav class="primary-navigation" aria-label="primary" role="primary-navigation">
-        <ul class="nav-list"  id="primary-navigation"  role="list">
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Community</a></li>
-        </ul>
-      </nav>
-      <button class="button">Get Started</button>
-    </div>
+        <div class="nav-wrapper">
+          <a href="#"><img src="./img/images/logo.svg" alt="Manage" /></a>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <img
+              class="icon-hamburger"
+              src="img/images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              class="icon-close"
+              src="img/images/icon-close.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="sr-only">Menu</span>
+          </button>
+          <nav
+            class="primary-navigation"
+            aria-label="primary"
+            role="primary-navigation"
+            id="primary-navigation"
+          >
+            <ul class="nav-list" role="list">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button class="button | hidden-at-small show-at-md">Get Started</button>
+        </div>
+      </div>
     </header>
-
 
     <main>
       <section class="padding-block-900">
@@ -74,19 +91,39 @@
               <ul class="numbered-items" role="list">
                 <li>
                   <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet.</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, animi laborum quae odit repudiandae commodi delectus ab odio officia nemo harum rem mollitia ipsum placeat facere adipisci cumque esse veniam?</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem, animi laborum quae odit repudiandae commodi delectus
+                    ab odio officia nemo harum rem mollitia ipsum placeat facere
+                    adipisci cumque esse veniam?
+                  </p>
                 </li>
                 <li>
                   <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet.</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, animi laborum quae odit repudiandae commodi delectus ab odio officia nemo harum rem mollitia ipsum placeat facere adipisci cumque esse veniam?</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem, animi laborum quae odit repudiandae commodi delectus
+                    ab odio officia nemo harum rem mollitia ipsum placeat facere
+                    adipisci cumque esse veniam?
+                  </p>
                 </li>
                 <li>
-                  <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet. </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, animi laborum quae odit repudiandae commodi delectus ab odio officia nemo harum rem mollitia ipsum placeat facere adipisci cumque esse veniam?</p>
+                  <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem, animi laborum quae odit repudiandae commodi delectus
+                    ab odio officia nemo harum rem mollitia ipsum placeat facere
+                    adipisci cumque esse veniam?
+                  </p>
                 </li>
                 <li>
                   <h3 class="fs-600 fw-bold"></h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, animi laborum quae odit repudiandae commodi delectus ab odio officia nemo harum rem mollitia ipsum placeat facere adipisci cumque esse veniam?</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem, animi laborum quae odit repudiandae commodi delectus
+                    ab odio officia nemo harum rem mollitia ipsum placeat facere
+                    adipisci cumque esse veniam?
+                  </p>
                 </li>
               </ul>
             </div>
@@ -96,15 +133,21 @@
       </section>
       <section class="padding-block-700 | carousel">
         <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
-      <!-- Caroussel here -->
+        <!-- Caroussel here -->
         <button class="button">Get Started</button>
       </section>
 
       <section class="cta | bg-accent-400 text-neutral-100 padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div><p class="fs-secondary-heading fw-bold">Simplify how your team works today</p></div>
-            <div><button class="button" data-type="inverted">Get Started</button></div>
+            <div>
+              <p class="fs-secondary-heading fw-bold">
+                Simplify how your team works today
+              </p>
+            </div>
+            <div>
+              <button class="button" data-type="inverted">Get Started</button>
+            </div>
           </div>
         </div>
       </section>
@@ -114,13 +157,37 @@
       <div class="container">
         <div class="even-columns">
           <div>
-            <a href="#"><img src="./img/images/logo.svg" alt=""></a>
-            <ul role="list" aria-label="social links" aria-labelledby="headerid">
-              <li><a href="#" aria-label="facebook"><img src="img/images/icon-facebook.svg" alt="facebook"></a></li>
-              <li><a href="#" aria-label="Youtube"><img src="img/images/icon-youtube.svg" alt="youtube"></a></li>
-              <li><a href="#" aria-label="Twitter"><img src="img/images/icon-twitter.svg" alt="twitter"></a></li>
-              <li><a href="#" aria-label="Pinterest"><img src="img/images/icon-pinterest.svg" alt="pinterest"></a></li>
-              <li><a href="#" aria-label="Instagram"><img src="img/images/icon-instagram.svg" alt="instagram"></a></li>
+            <a href="#"><img src="./img/images/logo.svg" alt="" /></a>
+            <ul
+              role="list"
+              aria-label="social links"
+              aria-labelledby="headerid"
+            >
+              <li>
+                <a href="#" aria-label="facebook"
+                  ><img src="img/images/icon-facebook.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Youtube"
+                  ><img src="img/images/icon-youtube.svg" alt="youtube"
+                /></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Twitter"
+                  ><img src="img/images/icon-twitter.svg" alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Pinterest"
+                  ><img src="img/images/icon-pinterest.svg" alt="pinterest"
+                /></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Instagram"
+                  ><img src="img/images/icon-instagram.svg" alt="instagram"
+                /></a>
+              </li>
             </ul>
           </div>
           <div>
@@ -138,7 +205,7 @@
           </div>
           <div>
             <form action="#">
-              <input type="email">
+              <input type="email"/>
               <button>Go</button>
             </form>
             <p>CopyRight 2020. All Rights Reserved</p>
@@ -147,7 +214,7 @@
       </div>
     </footer>
 
+
     <script type="module" src="./main.js"></script>
   </body>
-
 </html>
