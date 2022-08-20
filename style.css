@@ -81,9 +81,11 @@ p:not([class]) {
 p[data-width="wide"] {
   max-width: 45ch;
 }
+
 /* Button */
 .button {
-  border: 0;
+  display: flex;
+  border: none;
   border-radius: 100vmax;
   padding: 1em 2.5em;
   line-height: 1;
@@ -148,9 +150,9 @@ p[data-width="wide"] {
 @media (max-width: 50em) {
  
   .primary-header {
-    isolation: isolate;
     position: sticky;
     top: 0;
+    z-index: 1;
     background-color: #fff;
   }
   
@@ -191,14 +193,50 @@ p[data-width="wide"] {
     border: solid green;
     padding: 0.5em;
   }
-  .mobile-nav-toggle .icon-close {
+  .mobile-nav-toggle[aria-expanded='false'] .icon-close,
+  .mobile-nav-toggle[aria-expanded='true'] .icon-hamburger {
     display: none;
   } 
+  .mobile-nav-toggle[aria-expanded='false'] .icon-hamburger,
+  .mobile-nav-toggle[aria-expanded='true'] .icon-close {
+    display: revert;
+  } 
+ 
+
+}
+
+/* cta */
+
+.cta {
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+  
 }
 
 
 
+.cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('img/images/bg-simplify-section-desktop.svg'), transparent;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: 10% 0;
+  background-repeat: no-repeat;
+}
+@media (min-width: 50em) {
+  .cta {
+    text-align: revert;
 
+  }
+  .cta::before {
+    background-size: auto 150%;
+    background-position: 20% 100%;
+  }
+}
 
 /* #######  Utility classes ####### */
 
@@ -217,9 +255,7 @@ p[data-width="wide"] {
 section {
   border: 4px solid lightgreen;
 }
-main {
-  /* border: 4px solid lightseagreen; */
-}
+
 .container {
   --max-width: 1110px;
   --padding: 1rem;
@@ -227,25 +263,56 @@ main {
   margin-inline: auto;
   border: 2px solid red;
 }
-.flow > * + * {
-  margin-top: var(--flow-spacer, 2em);
-}
+
 .even-columns {
   border: 4px solid green;
   display: grid;
   gap: 1rem;
 }
-
-@media (min-width: 50rem) {
-  
+.even-columns > * {
+  border: solid;
+}
+@media (min-width: 50rem) {       
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
-  .even-columns > * {
-    border: solid;
+  
+}
+
+.vertical-align-center {
+  align-items: center;
+}
+
+.justify-self-end {
+  justify-content: end; 
+}
+@media (min-width: 50em) {
+  .justify-self-end-md {
+    justify-content: center;
+  }
+  
+}
+
+.push-center {
+  margin-inline: auto;
+}
+@media (min-width: 50em) {
+  .push-right-md {
+    margin-right: revert;
+    margin-left: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
+.flow > * + * {
+  margin-top: var(--flow-spacer, 2em);
+}
+
+
+
+
 
 .text-primary-400 {
   color: var(--clr-primary-400);
