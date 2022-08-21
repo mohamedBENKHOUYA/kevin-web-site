@@ -205,6 +205,22 @@ p[data-width="wide"] {
 
 }
 
+
+/* footer navigation */
+
+.footer-nav {
+  columns: 2;
+
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: var(--clr-neutral-100);
+}
+.footer-nav a:is(:hover, :focus) {
+  color: var(--clr-accent-400);
+}
+
 /* cta */
 
 .cta {
