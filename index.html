@@ -15,49 +15,53 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header class="primary-header">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="#"><img src="./img/images/logo.svg" alt="Manage" /></a>
-          <button
-            class="mobile-nav-toggle"
-            aria-controls="primary-navigation"
-            aria-expanded="false"
-          >
-            <img
-              class="icon-hamburger"
-              src="img/images/icon-hamburger.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            <img
-              class="icon-close"
-              src="img/images/icon-close.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            <span class="sr-only">Menu</span>
-          </button>
-          <nav
-            class="primary-navigation"
-            aria-label="primary"
-            role="primary-navigation"
-            id="primary-navigation"
-          >
-            <ul class="nav-list" role="list">
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Community</a></li>
-            </ul>
-          </nav>
-          <button class="button | hidden-at-small show-at-md">
-            Get Started
-          </button>
+      <header class="primary-header">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#">
+              <svg class="logo" height="24" width="146">
+                <use xlink:href="img/social-icons.svg#logo"></use>
+              </svg>
+            </a>
+            <button
+              class="mobile-nav-toggle"
+              aria-controls="primary-navigation"
+              aria-expanded="false"
+            >
+              <img
+                class="icon-hamburger"
+                src="img/images/icon-hamburger.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <img
+                class="icon-close"
+                src="img/images/icon-close.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span class="sr-only">Menu</span>
+            </button>
+            <nav
+              class="primary-navigation"
+              aria-label="primary"
+              role="primary-navigation"
+              id="primary-navigation"
+            >
+              <ul class="nav-list" role="list">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Community</a></li>
+              </ul>
+            </nav>
+            <button class="button | hidden-at-small show-at-md">
+              Get Started
+            </button>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
     <main>
       <section class="padding-block-900">
@@ -133,8 +137,8 @@
                   <p data-width="wide">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quidem, animi laborum quae odit repudiandae commodi delectus
-                    ab odio officia nemo harum rem molli tia ipsum placeat facere
-                    adipisci cumque esse veniam?
+                    ab odio officia nemo harum rem molli tia ipsum placeat
+                    facere adipisci cumque esse veniam?
                   </p>
                 </li>
               </ul>
@@ -158,68 +162,74 @@
               </p>
             </div>
             <div>
-              <button class="button | push-center push-right-md" data-type="inverted">Get Started</button>
+              <button
+                class="button | push-center push-right-md"
+                data-type="inverted"
+              >
+                Get Started
+              </button>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="padding-block-700 bg-neutral-900 text-neutral-100">
+    <footer class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100">
       <div class="container">
-        <div class="even-columns">
-          <div>
-            <a href="#"><img src="./img/images/logo.svg" alt="" /></a>
+        <div class="primary-footer-wrapper">
+          <div class="primary-footer-logo-social">
+            <!-- <a href="#"><img src="./img/images/logo.svg" alt="" /></a> -->
+            <a href="#" aria-label="home">
+              <svg class="logo" height="24" width="146">
+                <use xlink:href="img/social-icons.svg#logo"></use>
+              </svg>
+            </a>
             <ul
+              class="social-list"
               role="list"
               aria-label="social links"
               aria-labelledby="headerid"
             >
               <li>
                 <a href="#" aria-label="facebook">
-                  <svg class="icon">
+                  <svg class="social-icon">
                     <use xlink:href="img/social-icons.svg#icon-facebook"></use>
-                  </svg>
-              </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Youtube"
-                  >
-                  <svg class="icon">
-                    <use xlink:href="img/social-icons.svg#icon-youtube" ></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="Twitter"
-                  >
-                  <svg class="icon">
+                <a href="#" aria-label="Youtube">
+                  <svg class="social-icon">
+                    <use xlink:href="img/social-icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Twitter">
+                  <svg class="social-icon">
                     <use xlink:href="img/social-icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="Pinterest"
-                  >
-                  <svg class="icon">
-                    <use xlink:href="img/social-icons.svg#icon-pinterest" ></use>
+                <a href="#" aria-label="Pinterest">
+                  <svg class="social-icon">
+                    <use xlink:href="img/social-icons.svg#icon-pinterest"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="Instagram"
-                  >
-                  <svg class="icon">
+                <a href="#" aria-label="Instagram">
+                  <svg class="social-icon">
                     <use xlink:href="img/social-icons.svg#icon-instagram"></use>
-                    8
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div>
+          <div class="primary-footer-nav">
             <nav class="footer-nav" aria-label="footer">
-              <ul class="flow" style="--flow-spacer: 1em;" role="list">
+              <ul class="flow" style="--flow-spacer: 1em" role="list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Products</a></li>
@@ -230,10 +240,10 @@
               </ul>
             </nav>
           </div>
-          <div>
+          <div class="primary-footer-form">
             <form action="#">
-              <input type="email" />
-              <button>Go</button>
+              <input type="email" placeholder="updates in your inbox..." />
+              <button class="button" data-shadow="none">Go</button>
             </form>
             <p>CopyRight 2020. All Rights Reserved</p>
           </div>
